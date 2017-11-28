@@ -1,0 +1,323 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1c020t9knx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Party.xml" ;
+	km-dev:modelPublicationTime "1511896557209"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"PARTY\"},{\"columnName\":\"INDIVIDUAL\"},{\"columnName\":\"NAME\"},{\"columnName\":\"FirstName\"}],[{\"columnName\":\"PARTY\"},{\"columnName\":\"INDIVIDUAL\"},{\"columnName\":\"NAME\"},{\"columnName\":\"LastName\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"PARTY\"},{\"columnName\":\"INDIVIDUAL\"},{\"columnName\":\"NAME\"},{\"columnName\":\"FirstName\"}],[{\"columnName\":\"PARTY\"},{\"columnName\":\"INDIVIDUAL\"},{\"columnName\":\"NAME\"},{\"columnName\":\"LastName\"}]]" ;
+	km-dev:hasModelLabel "Party.xml" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"https://github.com/samvaspri12/karma.git\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://localhost:8080/source/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"hasGithubURL\": true,
+                    \"GithubURL\": \"https://github.com/samvaspri12/karma\",
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"PARTY\"},
+                    {\"columnName\": \"INDIVIDUAL\"},
+                    {\"columnName\": \"NAME\"},
+                    {\"columnName\": \"FirstName\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/firstName\",
+                    \"DomainLabel\": \"Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PARTY\\\"},{\\\"columnName\\\":\\\"INDIVIDUAL\\\"},{\\\"columnName\\\":\\\"NAME\\\"},{\\\"columnName\\\":\\\"FirstName\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PARTY\\\"},{\\\"columnName\\\":\\\"INDIVIDUAL\\\"},{\\\"columnName\\\":\\\"NAME\\\"},{\\\"columnName\\\":\\\"FirstName\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"PARTY\"},
+                    {\"columnName\": \"INDIVIDUAL\"},
+                    {\"columnName\": \"NAME\"},
+                    {\"columnName\": \"LastName\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/lastName\",
+                    \"DomainLabel\": \"Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PARTY\\\"},{\\\"columnName\\\":\\\"INDIVIDUAL\\\"},{\\\"columnName\\\":\\\"NAME\\\"},{\\\"columnName\\\":\\\"LastName\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"PARTY\\\"},{\\\"columnName\\\":\\\"INDIVIDUAL\\\"},{\\\"columnName\\\":\\\"NAME\\\"},{\\\"columnName\\\":\\\"LastName\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_a3466aaf-8a85-4a90-80cb-aa358cd90422 a rr:TriplesMap .
+
+_:node1c020t9knx1 km-dev:hasTriplesMap km-dev:TriplesMap_a3466aaf-8a85-4a90-80cb-aa358cd90422 .
+
+km-dev:TriplesMap_a3466aaf-8a85-4a90-80cb-aa358cd90422 km-dev:isPartOfMapping _:node1c020t9knx1 .
+
+_:node1c020t9knx2 rr:tableName "Party.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c020t9knx1 .
+
+_:node1c020t9knx1 km-dev:hasLogicalTable _:node1c020t9knx2 .
+
+km-dev:TriplesMap_a3466aaf-8a85-4a90-80cb-aa358cd90422 rr:logicalTable _:node1c020t9knx2 ;
+	rr:subjectMap _:node1c020t9knx3 .
+
+_:node1c020t9knx1 km-dev:hasSubjectMap _:node1c020t9knx3 .
+
+_:node1c020t9knx3 km-dev:isPartOfMapping _:node1c020t9knx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Person1" ;
+	rr:class foaf:Person ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "foaf:Person1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ac03d76b-fecd-4e45-9826-93653e972306 rr:predicate foaf:firstName .
+
+_:node1c020t9knx4 rr:column "[\"PARTY\",\"INDIVIDUAL\",\"NAME\",\"FirstName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c020t9knx1 .
+
+_:node1c020t9knx1 km-dev:hasObjectMap _:node1c020t9knx4 .
+
+km-dev:PredicateObjectMap_ac03d76b-fecd-4e45-9826-93653e972306 rr:objectMap _:node1c020t9knx4 .
+
+km-dev:TriplesMap_a3466aaf-8a85-4a90-80cb-aa358cd90422 rr:predicateObjectMap km-dev:PredicateObjectMap_ac03d76b-fecd-4e45-9826-93653e972306 .
+
+km-dev:PredicateObjectMap_ac03d76b-fecd-4e45-9826-93653e972306 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c020t9knx1 .
+
+_:node1c020t9knx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ac03d76b-fecd-4e45-9826-93653e972306 .
+
+km-dev:PredicateObjectMap_f4600b28-c708-4dc1-b758-2fb6a3b06855 rr:predicate foaf:lastName .
+
+_:node1c020t9knx5 rr:column "[\"PARTY\",\"INDIVIDUAL\",\"NAME\",\"LastName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c020t9knx1 .
+
+_:node1c020t9knx1 km-dev:hasObjectMap _:node1c020t9knx5 .
+
+km-dev:PredicateObjectMap_f4600b28-c708-4dc1-b758-2fb6a3b06855 rr:objectMap _:node1c020t9knx5 .
+
+km-dev:TriplesMap_a3466aaf-8a85-4a90-80cb-aa358cd90422 rr:predicateObjectMap km-dev:PredicateObjectMap_f4600b28-c708-4dc1-b758-2fb6a3b06855 .
+
+km-dev:PredicateObjectMap_f4600b28-c708-4dc1-b758-2fb6a3b06855 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c020t9knx1 .
+
+_:node1c020t9knx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f4600b28-c708-4dc1-b758-2fb6a3b06855 .
